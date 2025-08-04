@@ -1,0 +1,124 @@
+/* /src/components/CustomTimeSelection.css */
+
+.time-picker-overlay {
+  top: 80%;
+  left: 0;
+  z-index: 1000;
+  background: none;
+  width: 80%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* Remove fixed, background-color, and centering styles */
+}
+
+.time-picker-container {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  width: 320px;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.time-display {
+  font-size: 48px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 20px;
+}
+
+.time-display span {
+  display: inline-block;
+  width: 70px;
+  text-align: center;
+}
+
+.time-display-separator {
+  color: #9ca3af;
+}
+
+.am-pm-toggle {
+  display: flex;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.am-pm-btn {
+  background-color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #374151;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.am-pm-btn.active {
+  background-color: #059669;
+  color: #ffffff;
+}
+
+.time-inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.time-input {
+  width: 60px;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  margin: 0 5px;
+  color: #111827;
+}
+
+.time-input:focus {
+  outline: none;
+  border-color: #059669;
+  box-shadow: 0 0 0 2px rgba(5, 150, 105, 0.2);
+}
+
+.time-picker-actions {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.time-picker-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.time-picker-btn.cancel {
+  color: #6b7280;
+}
+
+.time-picker-btn.cancel:hover {
+  background-color: #f3f4f6;
+}
+
+.time-picker-btn.set {
+  background-color: #059669;
+  color: #ffffff;
+}
+
+.time-picker-btn.set:hover {
+  background-color: #047857;
+}

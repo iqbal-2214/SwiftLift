@@ -1,0 +1,103 @@
+/* /src/pages/MyQuotesPage.css */
+.my-quotes-wrapper {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.quotes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.quote-card {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #6b7280; /* Default border color */
+}
+
+.quote-card h3 {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+}
+
+.quote-card p {
+  margin: 4px 0;
+  color: #4b5563;
+}
+
+/* --- Status-Specific Styling --- */
+.quote-status {
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 8px;
+  display: inline-block;
+  color: #000000;
+}
+
+.status-Pending-Admin-Review {
+  background-color: #f59e0b; /* Amber */
+  border-left-color: #f59e0b;
+}
+
+.status-Quoted {
+  background-color: #3b82f6; /* Blue */
+  border-left-color: #3b82f6;
+}
+
+.status-Accepted-by-User {
+  background-color: #8b5cf6; /* Violet */
+  border-left-color: #8b5cf6;
+}
+
+.status-Booked {
+  background-color: #10b981; /* Green */
+  border-left-color: #10b981;
+}
+
+.status-Declined-by-Admin {
+  background-color: #ef4444; /* Red */
+  border-left-color: #ef4444;
+}
+
+
+/* Admin Response Section */
+.admin-response {
+  border-top: 1px dashed #e5e7eb;
+  margin-top: 15px;
+  padding-top: 15px;
+}
+
+.admin-response p {
+  font-size: 16px;
+}
+.admin-response strong {
+    color: #059669;
+}
+
+.accept-btn {
+  background-color: #059669;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s;
+}
+
+.accept-btn:hover {
+    background-color: #047857;
+}
+
+.info-message {
+    padding: 20px;
+    text-align: center;
+    background-color: #f9fafb;
+    border-radius: 12px;
+}

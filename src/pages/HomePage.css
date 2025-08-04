@@ -1,0 +1,237 @@
+/* /src/pages/HomePage.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* --- General Layout --- */
+body {
+  background-color: #f3f4f6;
+  font-family: 'Inter', sans-serif;
+}
+
+.booking-page-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.booking-container {
+  width: 100%;
+  max-width: 620px;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Typography --- */
+.main-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 28px 0;
+}
+
+.input-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 8px;
+}
+
+/* --- Form & Input Styling --- */
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.input-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  color: #6b7280;
+  pointer-events: none; /* Allows clicks to go through to the input */
+}
+
+/* Base style for all inputs, including DatePicker */
+.custom-input {
+  width: 100%;
+  height: 50px;
+  padding-left: 45px; /* Space for icon */
+  padding-right: 15px;
+  font-size: 16px;
+  color: #111827;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+.custom-input:focus, .custom-input:hover {
+  outline: none;
+  border-color: #059669; /* Teal border on focus/hover */
+}
+
+/* Specific overrides for react-select */
+.select__control {
+  border-color: #e5e7eb !important;
+}
+
+.select__control--is-focused {
+  border-color: #059669 !important;
+  box-shadow: 0 0 0 1px #059669 !important;
+}
+
+.select__indicator-separator {
+  display: none;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.input-group {
+  flex: 1; /* Makes sure inputs in a row share space equally */
+}
+
+/* --- Button --- */
+.find-cabs-btn {
+  width: 100%;
+  height: 52px;
+  background-color: #059669; /* Teal */
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 12px;
+}
+
+.booking-page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 40px 20px;
+  /* Remove background-image here */
+}
+
+.find-cabs-btn:hover {
+  background-color: #047857; /* Darker Teal */
+}
+
+/* --- Recent Locations Section --- */
+.recent-locations {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid #f3f4f6;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 16px 0;
+}
+
+.tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.tag-item {
+  background-color: #f3f4f6;
+  color: #374151;
+  padding: 8px 16px;
+  border-radius: 9999px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.tag-item:hover {
+  background-color: #e5e7eb;
+  color: #111827;
+}
+
+/* Add this class to your /src/pages/HomePage.css file */
+
+.custom-input.display-only {
+  display: flex;
+  align-items: flex-start       ;
+  cursor: pointer; /* Indicates it's clickable */
+  user-select: none; /* Prevents text selection */
+}
+
+/* Live Cab Status Section */
+.live-status-container {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid #f3f4f6;
+}
+
+.cab-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cab-status-item {
+  display: flex;
+  align-items: center;
+  background-color: #f3f4f6;
+  padding: 12px 16px;
+  border-radius: 12px;
+  transition: background-color 0.2s;
+}
+
+.cab-status-item:hover {
+    background-color: #e5e7eb;
+}
+
+.cab-icon {
+  width: 24px;
+  height: 24px;
+  color: #059669; /* Teal to match the button */
+  margin-right: 16px;
+}
+
+.cab-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.cab-name {
+  font-weight: 600;
+  color: #111827;
+  font-size: 16px;
+}
+
+.cab-location {
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.no-cabs-message {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9fafb;
+    border-radius: 12px;
+    color: #6b7280;
+}
